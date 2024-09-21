@@ -15,7 +15,7 @@
 <body>
     <!-- Info about delivery -->
     <div class="delivery">
-        <p>CONSCIOUSLY MADE BUTTER SOFT STAPLES FOR EVERY DAY (OR NIGHT)   
+        <p class="delivery-txt">CONSCIOUSLY MADE BUTTER SOFT STAPLES FOR EVERY DAY (OR NIGHT)   
            |   FREE SHIPPING on orders > $200   
            |   easy 45 day return window.
         </p>
@@ -25,21 +25,30 @@
     <section id="hero" class="hero">
 
         <!-- Content on the left side of the hero section -->
-        <div class="leftside">
-            <img src="" alt="Byteex logo" class="">
-            <h1>Don’t apologize for being comfortable.</h1>
-            <div>
-                <img src="./image/icon_1_sun.svg" alt="Illustrating icon to the section" class="small-icon">
-                <p>Beautiful, comfortable loungewear for day or night.</p>
-            </div>
-            <div>
-                <img src="./image/icon_1_shopingcart.svg" alt="Illustrating icon to the section" class="small-icon">
-                <p>No wasteful extras, like tags or plastic packaging.</p>
-            </div>
-            <div>
-                <img src="./image/icon_1_air.svg" alt="Illustrating icon to the section" class="small-icon">
-                <p>Our signature fabric is incredibly comfortable — unlike anything you’ve ever felt.</p>
-            </div>
+        <div id="leftside">
+            <div class="byteex-container"><img src="./image/logo.svg" alt="Byteex logo" class="byteex-logo"></div>
+            <h1 id="hero-quote">Don’t apologize for being comfortable.</h1>
+            <ul class="hero-list-container">
+                <li class="hero-list-item">
+                    <div class="small-icon-container">
+                        <img src="./image/icon_1_sun.svg" alt="Illustrating icon to the section" class="small-icon">
+                    </div>
+                    <p class="hero-list-text">Beautiful, comfortable loungewear for day or night.</p>
+                </li>
+                <li class="hero-list-item">
+                    <div class="small-icon-container">
+                        <img src="./image/icon_1_shopingcart.svg" alt="Illustrating icon to the section" class="small-icon">
+                    </div>
+                    <p class="hero-list-text">No wasteful extras, like tags or plastic packaging.</p>
+                </li>
+                <li class="hero-list-item">
+                    <div class="small-icon-container ">
+                        <img src="./image/icon_1_air.svg" alt="Illustrating icon to the section" class="small-icon " id="notscquare" >
+                    </div>
+                    <p class="hero-list-text">Our signature fabric is incredibly comfortable — unlike anything you’ve ever felt.</p>
+                </li>
+            </ul>
+            
             <button> 
                 Customize Your Outfit
                 <img src="./image/arrow.svg" alt="Arrow" class="button-icon">
@@ -49,21 +58,21 @@
                 <div class="review-content">
                     <div class="star-rating">
                         <img src="./image/color wheel.png" alt="Photo of a user" class="user">
-                        <h2 class=""></h2>
-                        <ul>
-                            <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
-                            <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
-                            <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
-                            <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
-                            <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
+                        <p id="userName">Amy P.</p>
+                        <ul class="star-rating">
+                            <li><img src="./image/star.svg" alt="5 out of 5 stars" /></li>
+                            <li><img src="./image/star.svg" alt="5 out of 5 stars" /></li>
+                            <li><img src="./image/star.svg" alt="5 out of 5 stars"/></li>
+                            <li><img src="./image/star.svg" alt="5 out of 5 stars"/></li>
+                            <li><img src="./image/star.svg" alt="5 out of 5 stars"/></li>
                         </ul>
-                         
+                        
                         <p class="eleven">One of 500+ 5 Star Reviews Online</p>
                     </div>
                 </div>
 
                 <blockquote>
-                    <p>Overjoyed with my Loungewear set. I have the jogger and the sweatshirt. 
+                    <p class="review-text">Overjoyed with my Loungewear set. I have the jogger and the sweatshirt. 
                         Quality product on every level. From the compostable packaging, to the 
                         supplied washing bag, even the garments smells like fresh herbs when I first held them. 
                     </p>
@@ -73,26 +82,28 @@
         </div>
         
         <!-- Content on the left side of the hero section -->
-        <div class="rightside">
+        <div id="rightside">
             <div class="image-group-hero">
-                <img src="./image/closedeyes.png" alt="Woman wearing product" class="center-image-hero">
-                <img src="./image/curly.png" alt="Woman wearing product" class="side-image-hero leftside-image-hero">
-                <img src="./image/Screenshot.png" alt="Woman wearing product" class="side-image-hero rightside-image-hero">
-                <div class="gradient-hero"></div>
-                <div class="gradient-hero"></div>
+                <img src="./image/gradient.svg" alt="Woman wearing product" class="gradient-hero" id="left-gradient">
+                <img src="./image/curly.png" alt="Woman wearing product" class="side-image-hero-container" id="leftside-image-hero">
+                <img src="./image/Lucille-8x14.png"  id="center-image-hero-container" alt="Woman wearing product" >
+                <img src="./image/Screenshot.png" id="rightside-image-hero"  class="side-image-hero-container" alt="Woman wearing product" >
+                <img src="./image/gradient.svg" alt="Woman wearing product" class="gradient-hero" id="right-gradient">
             </div>
+            
+        </div>
 
         <!-- Content on the bottom of the hero section -->
-        
-            <div class="screenwide">
-                <p class="twenty">as seen in</p>
-                <div>
-                    <img src="./image/brand_1.png" alt="Eco-Stylist - Partner's company logo" class="">
-                    <img src="./image/brand_2.png" alt="Canadian living - Partner's company logo" class="">
-                    <img src="./image/brand_3.png" alt="Jillian Harris - Partner's company logo" class="">
-                    <img src="./image/brand_4.png" alt="The Eco Hub - Partner's company logo" class="">
-                    <img src="./image/brand_5.png" alt="Threndhunter - Partner's company logo" class="">
-                </div>
+        <div id="screenwide">
+            <div id="screenwide-text">
+                <p id="screenwide-texts">as seen in</p>
+            </div>
+            <div class="logos-container">
+                <img src="./image/brand_1.png" alt="Eco-Stylist - Partner's company logo" class="logo1">
+                <img src="./image/brand_2.png" alt="Canadian living - Partner's company logo" class="logo2">
+                <img src="./image/brand_3.png" alt="Jillian Harris - Partner's company logo" class="logo3">
+                <img src="./image/brand_4.png" alt="The Eco Hub - Partner's company logo" class="logo4">
+                <img src="./image/brand_5.png" alt="Threndhunter - Partner's company logo" class="logo5">
             </div>
         </div>
     </section>
@@ -240,7 +251,7 @@
             <img src="./image/arrow.svg" alt="Arrow" class="">
         </button>
         <div class="reviews">
-            <ul>
+            <ul class="star-rating">
                 <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
                 <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
                 <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
@@ -298,7 +309,7 @@
                 <img src="./image/arrow.svg" alt="Arrow" class="">
             </button>
             <div class="reviews">
-                <ul>
+                <ul class="star-rating">
                     <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
                     <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
                     <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
@@ -449,13 +460,13 @@
                 <p class="fourteen">FREE Shipping on Orders over $200</p>
             </li>
             <li>
-                <ul>
-                            <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
-                            <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
-                            <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
-                            <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
-                            <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
-                        </ul>
+                <ul class="star-rating">
+                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
+                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
+                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
+                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
+                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
+                </ul>
                 <p class="fourteen">Over 500+ 5 Star Reviews Online
                 </p>
             </li>

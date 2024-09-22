@@ -3,6 +3,7 @@
     --secondary-color: #F9F0E5;
     --tertiary-color: white;
     --quantary-color: #676869;
+    --grey: #F0EEEF;
     --font-size: 9px;
     --h1-font-size: 34px;
     --h2-font-size: 32px;
@@ -18,8 +19,6 @@
     flex-wrap: wrap;
     flex-direction: row; 
     overflow-x: hidden ;
-
-
 }
 
 p {
@@ -32,6 +31,7 @@ p {
 h1,h2,h3,h4 {
     color: var(--primary-color);
     font-family: var(--primary-font-family);
+    font-weight: 400;
 }
 
 h1 {
@@ -103,7 +103,7 @@ h2 {
 .hero-list-item, .benefits_item {
     display: flex;
     width: 100%;
-    margin: 0 0 20px  ;  
+    margin: 0 0 8px  ;  
 }
 
 .small-icon-container, .icon_container {
@@ -130,6 +130,7 @@ h2 {
 
 /* Button */
 .blue_button {
+    
     background-color: var(--primary-color);
     color: var(--tertiary-color);
     padding: 17px 56px;
@@ -333,7 +334,8 @@ h2 {
 }
 
 .benefits_container {
-    margin-top: 77px;
+    margin-top: 58px;
+    line-height: 1;
 }
 
 .text_container {
@@ -459,6 +461,107 @@ justify-content: center
     margin-left: -6%;
 }
 
+/* About section */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--grey);
+    margin-top: 92px;
+    box-sizing: border-box;
+}
+  
+#left-container-about,
+#right-container-about {
+    flex: 1;
+    min-width: 300px;  
+    box-sizing: border-box;
+}
+  
+#left-container-about {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+}
+  
+.main-image-about,
+.leftside-image-about,
+.rightside-image-about {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+   
+.main-image-about {
+    width: 50%;
+    height: 75%;
+    margin-top: 10%;
+}
+  
+.leftside-image-about {
+    width: 23%;
+    height: 24%;
+    transform: translate(50%, 14%);   
+    justify-content: flex-end;
+}
+  
+.rightside-image-about {
+    width: 18%;
+    height: 23%;
+    transform: translate(-45%, 290%);   
+}
+  
+.main-image-about img,
+.leftside-image-about img,
+.rightside-image-about img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+#right-container-about {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-top: 7.5%;
+    font-size: var(--h4-font-size);
+}
+
+#right-container-h2 {
+    font-size: 28px;
+}
+
+.about-text{
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.about-text p{
+    padding-top: 20px;
+    line-height: 1.8;
+    padding-right: 15%;
+}
+
+.new-button {
+    width: 48%;
+}
+
+  /* Responsive design
+  @media (max-width: 768px) {
+    #left-container-about,
+    #right-container-about {
+      flex: 100%;
+    }
+  
+    #left-container-about {
+      aspect-ratio: 4 / 3; /* Adjust aspect ratio for mobile 
+    }
+  } 
   /* Responsive design for smaller screens 
   @media (max-width: 768px) {
     .hero .leftside,

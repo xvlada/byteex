@@ -256,40 +256,42 @@
 
     <!-- Product description/How to order section -->
     <section id="product" class="product">
-    <h2>Comfort made easy</h2>
-    <ul>
-        <li class="item">
-            <img src="./image/icon_3_shopingcart.svg" alt="Icon" class="">
-            <h3>You save.</h3>
-            <p>Browse our comfort sets and save 15% when you bundle.</p>
+    <h2 class="product-header">Comfort made easy</h2>
+    <ul class="product-block">
+        <li class="item-container grey-item">
+            <img src="./image/icon_3_shopingcart.svg" alt="Icon" class="item item1">
+            <h3 class="item">You save.</h3>
+            <p class="item">Browse our comfort sets and save 15% when you bundle.</p>
         </li>
 
-        <li class="item">
-           <img src="./image/icon_3_delivery.svg" alt="Icon" class="">
-           <h3>We ship.</h3>
-           <p>We ship your items within 1-2 days of receiving your order.</p>
+        <li class="item-container brown-item">
+           <img src="./image/icon_3_delivery.svg" alt="Icon" class="item item2">
+           <h3 class="item">We ship.</h3>
+           <p class="item">We ship your items within 1-2 days of receiving your order.</p>
         </li>
 
-        <li class="item"></li>
-           <img src="./image/icon_3_sun.svg" alt="Icon" class="">
-           <h3>You enjoy!</h3>
-           <p>Wear hernest around the house, out on the town, or in bed.</p>
+        <li class="item-container grey-item"> 
+           <img src="./image/icon_3_sun.svg" alt="Icon" class="item item3 ">
+           <h3 class="item">You enjoy!</h3>
+           <p class="item">Wear hernest around the house, out on the town, or in bed.</p>
         </li>
     </ul>
-    <div class="customize_button">
-        <button class="blue_button" aria-label="Customize Your Outfit">
-            Customize Your Outfit
-            <img src="./image/arrow.svg" alt="Arrow" class="">
-        </button>
-        <div class="reviews">
-            <ul class="star-rating">
+    <div class="customize_button product-button-container ">
+        <div class="product-button">
+            <button class="blue_button" aria-label="Customize Your Outfit">
+                Customize Your Outfit
+                <img src="./image/arrow.svg" alt="Arrow">
+            </button>
+        </div>
+        <div class="reviews" id="product-review" >
+            <ul class="star-rating" id="product-rating">
                 <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
                 <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
                 <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
                 <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
                 <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
             </ul>
-           <p class="seventeen">Over 500+ 5 Star Reviews Online</p>
+           <p class="seventeen" id="seventeen">Over 500+ 5 Star Reviews Online</p>
         </div>
     </div>
 </section>

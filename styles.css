@@ -509,12 +509,15 @@ justify-content: center
     width: 23%;
     height: 24%;
     transform: translate(50%, 14%);   
+    border: 3px solid var(--grey);
 }
   
 .rightside-image-about {
     width: 18%;
     height: 23%;
     transform: translate(-45%, 290%);   
+    border: 3px solid var(--grey);
+
 }
   
 .main-image-about img,
@@ -559,55 +562,72 @@ justify-content: center
     align-items: center;
     width: 100%;
     box-sizing: border-box;
-  }
+}
   
-  .product-header {
+.product-header {
     width: 100%;
     text-align: center;
     margin-bottom: 36px;
     font-size: var(--h2-font-size);
-    margin-top: 76px;
-    
-  }
+    margin-top: 76px;  
+}
   
-  .product-block {
+.product-block {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-
     width: 75%;
     list-style-type: none;
     height: 400px;
-    
-  }
+}
   
-  .item-container {
+.item-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 31%;
-    padding: 8% 0;
+    padding: 80px 20px;
     box-sizing: border-box;
-    border-radius: 3%;
-  }
+    border-radius: 3%; 
+}
   
-  .item-container .item {
+.item-container .item {
     width: 100%;
     text-align: center;
-  }
-
-.item{
-    margin-bottom: 5%;
 }
 
-  .item-container img.item {
+#item1{
+    margin-bottom: 28px;
+    margin-top: 5px; 
+}
+
+#item2{
+    margin-bottom: 20px; 
+    margin-top: 5px; 
+}
+
+#item3{
+    margin-bottom: 14px; 
+}
+
+.item{
+    margin-bottom: 14px;
+    line-height: 24px;
+} 
+
+p.item {
+    font-size: var(--h4-font-size);
+}
+
+.item-container img.item {
     width: auto;
     height: 35%;
     object-fit: contain;
-  }
+}
 
-  .grey-item {
+.grey-item {
     background-color: var(--grey);
 }
 .brown-item {
@@ -619,27 +639,32 @@ justify-content: center
     flex-direction: column;
     align-items: center;
     flex: 0 0 100%;
+    border-radius: 5%;
+    margin-top: 32px;
+}
+
+.product-button-container button{
+    margin-bottom: 0px;
 }
 
 #product-rating {
-width: auto;
-justify-content: flex-start;
+width: 30%;
+justify-content: center;
 align-content: center;
 display: flex;
-flex-wrap: wrap;
 }
 
 #seventeen{
-    font-size: 12px;
     display: flex;
-    justify-content: center;
-   width: auto;
+    justify-content: flex-start;
+    width: 70%;
+    font-size: 12px;
 }
 #product-rating li img{
     padding: 0;
-    width: 16px;
+    width: 15px;
 }
 #product-review{
     display: flex;
-    justify-content: center;
+    width: 100%;
 }

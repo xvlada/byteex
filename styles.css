@@ -118,12 +118,10 @@ h2 {
 }
 .small-icon-container{
     padding: 6px;
-
 }
 
 .icon_container{
     padding: 10px;
-
 }
 
 .hero-list-text, .text_container {
@@ -155,8 +153,8 @@ h2 {
 #first-button{
     margin: 8px 0 8% 0;    
     width: 65%;         
-
 }
+
 .button-arrow{
      padding-left: 10px;
 }
@@ -188,9 +186,11 @@ h2 {
     width: 100%;
     height: 100%;
 }
+
 #line-container{
     justify-content: space-between;
 }
+
 .user {
     width: 10%;
    }
@@ -215,7 +215,6 @@ h2 {
     font-size: 11px;
     padding: 5px;
     margin-top: 10px;
-    
 }
 
 /* Right side content */
@@ -314,7 +313,7 @@ h2 {
 
 .logo3, .logo2 {
     height: 50px;
- }
+}
 
 .logo4 {
     height: 37px;
@@ -414,8 +413,7 @@ h2 {
 
 .slick_slider_pic {
      width: 50%;
-     
-  }
+}
 
 .custom-navigation {
     display: flex;
@@ -493,7 +491,6 @@ justify-content: center
     margin-top: 60px;
     box-sizing: border-box;
     padding-bottom: 36px;
-
 }
   
 #left-container-about,
@@ -540,7 +537,6 @@ justify-content: center
     height: 23%;
     transform: translate(-45%, 290%);   
     border: 3px solid var(--grey);
-
 }
   
 .main-image-about img,
@@ -578,7 +574,6 @@ justify-content: center
     width: 48%;
     margin-top: 24px;
     margin-bottom: 50px;
-
 }
 
 /* Projuct description sector */
@@ -666,11 +661,11 @@ p.item {
     margin-top: 40px;
 
 }
+
 #third-button, #user-third-button{
     display: flex;
     justify-content: center;
     width: 100%;
- 
 }
 
 #product-stars, #user-product-stars {
@@ -686,8 +681,6 @@ margin-right: 16px;
 width: 15px;
 justify-content: center;
 }
-
-
 
 #seventeen, #user-seventeen{
     display: flex;
@@ -846,7 +839,6 @@ justify-content: center;
     margin: 0;
 }
 
-  /* Review button */
 .review-button {
     width: 100%;
     display: flex;
@@ -866,7 +858,6 @@ justify-content: center;
 .faq-left {
 width: 41%;
 }
-
 
 .faq-left h2 {
     width: 100%;
@@ -1002,6 +993,8 @@ width: 41%;
     transform: translate(0, -40%);
 }
 
+/* Info banner */
+
 #info-banner {
     display: flex;
     width: 100%;
@@ -1009,7 +1002,7 @@ width: 41%;
     flex-direction: row;
     background-color: var(--grey);
     padding: 42px;
-    margin-bottom: 100px;
+    margin-bottom: 82px;
 }
 
 #info-banner h3 {
@@ -1075,4 +1068,159 @@ width: 41%;
 
 .point3 {
     padding: 8px 15px;
+}
+
+/*  Final CTA section */
+
+#cta {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#cta h2, .cta_p{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.cta_p{
+    font-size: 13px;
+    margin: 0 30% 36px;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 26px;
+}
+.cta-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#cta-img-container {
+    display: flex;
+    justify-content: center;
+    width: 36%;
+    justify-content: center;
+    padding: 0;
+}
+
+.info-points-container {
+    display: flex;
+    width: 100%;
+}
+
+#cta-left-gradient{
+    transform: translate(53%, 0);   
+}
+
+#cta-right-gradient{
+    transform: translate(-53%, 0);   
+}
+
+#cta-leftside-image-hero {
+    transform: translate(-1%, 0);  
+}
+
+#cta-rightside-image-hero{
+    transform: translate(-8%, 0);  
+}
+
+#center-image-hero-container{
+    border: 5px solid white; 
+}
+
+.cta-button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 32px ;
+}
+.cta-button{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta_btn_bio{
+    display: flex; 
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.time_icon{
+    display: flex;
+    object-fit: cover;
+    padding-left:8px;
+
+}
+
+#bio-txt {
+    display: flex;
+width: auto;
+margin: 5px;
+font-size: 10px;
+font-family: var(--primary-font-family);
+color: #1FAD40;
+line-height: 18px;
+border-right: 1px solid #C4C4C4;
+padding-right: 8px;
+
+}
+
+.payment_icons {
+    display: flex;
+    width: 15%;
+    object-fit: cover;
+}
+ 
+.overview {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 16px 0 96px;
+
+}
+
+.overview div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    width: 12%;
+    margin: 0 12px;
+    align-items: center;
+}
+
+.ft-icn-container {
+    padding: 0;
+}
+
+.footer_icon {
+    border-radius: 50%;
+    padding-right:  12px;
+    background-color: var(--grey);
+}
+
+.footer_line {
+    border-right: .5px solid #C4C4C4;
+}
+
+.bg_gradient {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(var(--tertiary-color), var(--secondary-color)80%);
+    height: 350px;
+    margin-top: -350px;
+    z-index: -12;
+}
+
+.fourteen {
+    font-size: 12px;
+    line-height: 24px;
 }

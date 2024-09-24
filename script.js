@@ -31,3 +31,31 @@ $(document).ready(function() {
     
 });
 
+// $(document).ready(function(){
+//     $('.reviews-container').slick({
+//       slidesToShow: 3,
+//       slidesToScroll: 3,
+//       autoplay: true,
+//       infinite: true,
+//       autoplaySpeed: 3000,
+//       arrows: true,
+//       dots: true,
+//       responsive: [
+//         {
+//           breakpoint: 1024,
+//           settings: {
+//             slidesToShow: 2,
+//             slidesToScroll: 1,
+//           }
+//         },
+//         {
+//           breakpoint: 600,
+//           settings: {
+//             slidesToShow: 1,
+//             slidesToScroll: 1
+//           }
+//         }
+//       ]
+//     });
+//   });
+

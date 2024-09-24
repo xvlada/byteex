@@ -50,14 +50,14 @@
                 </li>
             </ul>
             
-            <button class="blue_button" aria-label="Customize Your Outfit"> 
+            <button class="blue_button" id="first-button" aria-label="Customize Your Outfit"> 
                 Customize Your Outfit
-                <img src="./image/arrow.svg" alt="Arrow" class="button-icon">
+                <img src="./image/arrow.svg" alt="Arrow" class="button-arrow" >
             </button>
 
             <article class="review">
                 <div class="review-content">
-                    <div class="star-rating">
+                    <div class="star-rating" id="line-container">
                         <img src="./image/color wheel.png" alt="Photo of a user" class="user">
                         <p id="userName">Amy P.</p>
                         <ul class="star-rating">
@@ -119,7 +119,7 @@
             <ul class="benefits_container">
                 <li class="benefits_item">
                     <div class="icon_container">
-                        <img src="./image/icon_2_shopingcart.svg" alt="Illustrating icon to the section" class="" id="button-icon">
+                        <img src="./image/icon_2_shopingcart.svg" alt="Illustrating icon to the section" class="button-icon">
                     </div>
 
                     <div class="text_container">
@@ -132,7 +132,7 @@
 
                 <li class="benefits_item">
                     <div class="icon_container">
-                        <img src="./image/icon_2_leaf.svg" alt="Illustrating icon to the section" class="" id="button-icon">
+                        <img src="./image/icon_2_leaf.svg" alt="Illustrating icon to the section" class="benefits_button-icon">
                     </div>
                     
                     <div class="text_container">
@@ -145,7 +145,7 @@
 
                 <li class="benefits_item">
                     <div class="icon_container">
-                        <img src="./image/icon_2_sun.svg" alt="Illustrating icon to the section" class="" id="button-icon">
+                        <img src="./image/icon_2_sun.svg" alt="Illustrating icon to the section" class="benefits_button-icon">
                     </div>
 
                     <div class="text_container">
@@ -158,7 +158,7 @@
 
                 <li class="benefits_item">
                     <div class="icon_container">
-                        <img src="./image/icon_2_air.svg" alt="Illustrating icon to the section" class="" id="button-icon notscquare">
+                        <img src="./image/icon_2_air.svg" alt="Illustrating icon to the section" class="benefits_button-icon" id=" notscquare">
                     </div>
                     
                     <div class="text_container">
@@ -247,9 +247,9 @@
             <p>Cras mattis varius mollis.</p>
             </div>
 
-            <button class="blue_button new-button" aria-label="Customize Your Outfit">
+            <button class="blue_button new-button" id="" aria-label="Customize Your Outfit">
                 Customize Your Outfit
-                <img src="./image/arrow.svg" alt="Arrow" class="">
+                <img src="./image/arrow.svg" alt="Arrow" >
             </button>
         </article>
     </section>
@@ -276,15 +276,16 @@
            <p class="item">Wear hernest around the house, out on the town, or in bed.</p>
         </li>
     </ul>
-    <div class="customize_button product-button-container ">
-        <div class="product-button">
+    
+        <div  id="third-button">
             <button class="blue_button" aria-label="Customize Your Outfit">
                 Customize Your Outfit
-                <img src="./image/arrow.svg" alt="Arrow">
+                <img src="./image/arrow.svg" alt="Arrow" class="button-arrow">
             </button>
         </div>
+    
         <div class="reviews" id="product-review" >
-            <ul class="star-rating" id="product-rating">
+            <ul class="star-rating" id="product-stars">
                 <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
                 <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
                 <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
@@ -293,13 +294,13 @@
             </ul>
            <p class="seventeen" id="seventeen">Over 500+ 5 Star Reviews Online</p>
         </div>
-    </div>
+   
 </section>
 
     <!-- User content section -->
     <section id="user-content" class="user-content">
-        <h2>What are our fans saying?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <h2 class="content-header">What are our fans saying?</h2>
+        <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
            Fusce lobortis sapien facilisis tincidunt pellentesque. 
            In eget ipsum et felis finibus consequat. Fusce non nibh luctus.
         </p>
@@ -331,28 +332,96 @@
 
          <!-- User reviews -->
         <div class="reviews-container">
-            <div class="review"></div>
-            <div class="review"></div>
-            <div class="review"></div>
+            <button class="prev-arrow"><img src="./image/left.svg" alt="Previous"></button>
+                <div class="review-container">
+                    <div class="top-part">
+                        <div class="review-logo">
+                            <img src="./image/color wheel plain.png" >
+                        </div>
+                        <div class="review-user-container">
+                            <div class="review-stars">
+                                <ul class="star-rating" id="user-rating">
+                                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="user-star"/></li>
+                                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="user-star"/></li>
+                                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="user-star"/></li>
+                                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="user-star"/></li>
+                                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="user-star"/></li>
+                                </ul>
+                            </div>
+                            <div class="review-user">Jane, S.</div>
+                        </div>
+                    </div>
+                    <div class="review-texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi.
+                    </div>
+                </div>
+                <div class="review-container">
+                    <div class="top-part">
+                        <div class="review-logo">
+                            <img src="./image/color wheel plain.png" >
+                        </div>
+                        <div class="review-user-container">
+                            <div class="review-stars">
+                                <ul class="star-rating" id="product-rating">
+                                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
+                                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
+                                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
+                                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
+                                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
+                                </ul>
+                            </div>
+                            <div class="review-user">Jane, S.</div>
+                        </div>
+                    </div>
+                    <div class="review-texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                        sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales.
+                    </div>
+                </div>
+                <div class="review-container">
+                    <div class="top-part">
+                        <div class="review-logo">
+                            <img src="./image/color wheel plain.png" >
+                        </div>
+                        <div class="review-user-container">
+                            <div class="review-stars">
+                                <ul class="star-rating" id="product-rating">
+                                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
+                                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
+                                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
+                                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
+                                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
+                                </ul>
+                            </div>
+                            <div class="review-user">Jane, S.</div>
+                        </div>
+                    </div>
+                    <div class="review-texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                        sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi.
+                    </div>
+                </div>
+            <button class="next-arrow" id="nomargin"><img src="./image/right.svg" alt="Next"></button>
         </div>
 
-        <div class="customize_button"></div>
+        
+        <div  id="user-third-button">
             <button class="blue_button" aria-label="Customize Your Outfit">
                 Customize Your Outfit
-                <img src="./image/arrow.svg" alt="Arrow" class="">
+                <img src="./image/arrow.svg" alt="Arrow" class="button-arrow">
             </button>
-            <div class="reviews">
-                <ul class="star-rating">
-                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
-                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
-                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
-                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
-                    <li><img src="./image/star.svg" alt="5 out of 5 stars" class="button-icon"/></li>
-                </ul>
-                <p class="seventeen">Over 500+ 5 Star Reviews Online
-                </p>
-            </div>
         </div>
+    
+        <div class="reviews" id="user-product-review" >
+            <ul class="star-rating" id="user-product-stars">
+                <li><img src="./image/star.svg" alt="5 out of 5 stars" class="user-button-icon"/></li>
+                <li><img src="./image/star.svg" alt="5 out of 5 stars" class="user-button-icon"/></li>
+                <li><img src="./image/star.svg" alt="5 out of 5 stars" class="user-button-icon"/></li>
+                <li><img src="./image/star.svg" alt="5 out of 5 stars" class="user-button-icon"/></li>
+                <li><img src="./image/star.svg" alt="5 out of 5 stars" class="user-button-icon"/></li>
+            </ul>
+           <p class="seventeen" id="user-seventeen">Over 500+ 5 Star Reviews Online</p>
+        </div>
+        
     </section>
 
     <!-- FAQ section-->
@@ -462,18 +531,18 @@
 
     <!-- Final CTA section-->
     <section id="cta" class="cta">
-        <div class="image-group-final">
-            <div><img src="./image/mock.png" alt="" class="main-image-final"></div>
-            <div class="side-image-final leftside-image-final"><img src="./image/blond.png" alt="" ></div>
-            <div class="side-image-final rightside-image-final"><img src="./image/curly.png" alt="" ></div>
-            <div class="gradient-final"></div>
-            <div class="gradient-final"></div>
+        <div class="image-group-hero">
+            <img src="./image/gradient.svg" alt="Woman wearing product" class="gradient-hero" id="left-gradient">
+            <img src="./image/blond.png" alt="Woman wearing product" class="side-image-hero-container" id="leftside-image-hero">
+            <img src="./image/mock.png" id="center-image-hero-container" alt="Woman wearing product">
+            <img src="./image/curly.png" id="rightside-image-hero"  class="side-image-hero-container" alt="Woman wearing product" >
+            <img src="./image/gradient.svg" alt="Woman wearing product" class="gradient-hero" id="right-gradient">
         </div>
 
-        <div class="customize_button"></div>
+        <div >
             <button class="blue_button" aria-label="Customize Your Outfit">
                 Customize Your Outfit
-                <img src="./image/arrow.svg" alt="Arrow" class="">
+                <img src="./image/arrow.svg" alt="Arrow" class="button-arrow">
             </button>
             <div class="after_button">
                 <div class="">

@@ -769,8 +769,7 @@ justify-content: center;
     justify-content: space-evenly;
     box-sizing: border-box;
     margin: 64px 0;
-    padding: 0 32px;
-    
+    padding: 0 32px;  
 }
 
 .review-container {
@@ -794,8 +793,6 @@ justify-content: center;
     justify-content: center;
     margin-right: 10px;
    height: fit-content;
-
-
 }
   
 .review-logo img {
@@ -824,8 +821,6 @@ justify-content: center;
     justify-content: flex-start;
 }
 
-
-
 .review-stars,
 .review-user {
     width: 100%;
@@ -845,7 +840,7 @@ justify-content: center;
      justify-content: flex-start;
      align-content: center;
      height: fit-content;
-  } 
+} 
 
 #nomargin {
     margin: 0;
@@ -866,7 +861,6 @@ justify-content: center;
     width: 100%;
     margin-bottom: 10%;
     justify-content: flex-end;
-
 }
 
 .faq-left {
@@ -877,7 +871,7 @@ width: 41%;
 .faq-left h2 {
     width: 100%;
     margin-bottom: 48px;
- }
+}
 
 .accordion {
     display:flex;
@@ -885,7 +879,6 @@ width: 41%;
     justify-content: center;
     align-items: center;
     width: 100%;
-
 }
 
 .accordion-header {
@@ -908,11 +901,9 @@ width: 41%;
     letter-spacing: 1px;
     border-top: .5px solid #EAEAEA; 
     border-bottom: .5px solid #EAEAEA; 
-
-
-  }
+}
   
-  .accordion-header:after {
+.accordion-header:after {
     content: '\002B';
     float: right;
     font-family: var(--primary-font-family);
@@ -922,11 +913,11 @@ width: 41%;
     line-height: 35px;
     font-weight: 200;
 
-  }
+}
   
   .active:after {
     content: "\2212";
-  }
+}
   
   .accordion-content {
     max-height: 0;
@@ -936,12 +927,12 @@ width: 41%;
     font-family: var(--primary-font-family);
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-  }
+}
 
   .accordion-content p {
     line-height: 24px;
     padding-right: 36px;
-  }
+}
 
   .image-group-faq {
     display: flex;
@@ -950,7 +941,7 @@ width: 41%;
     flex-wrap: wrap;
     justify-content: center;
     padding-right: 4%;
-  }
+}
 
 .left-image-faq,
 .right-image-faq{  
@@ -979,9 +970,8 @@ width: 41%;
     justify-content: center;
     width: 38%;
     z-index: 2;
-
-
 }
+
 .left-image-faq {
     width: 39%;
     transform: translate(-4%, 43%);
@@ -990,7 +980,6 @@ width: 41%;
 
 .main-image-faq{
     transform: translate(0, 38%);
-
 }
 
 .right-image-faq{
@@ -999,36 +988,91 @@ width: 41%;
     z-index: -1;    
 }
 .gradient-faq{
-  background: linear-gradient(var(--tertiary-color) 10%, var(--secondary-color));
-width: 149px;
-height: 187px;
-z-index: -10;
-
+    background: linear-gradient(var(--tertiary-color) 10%, var(--secondary-color));
+    width: 149px;
+    height: 187px;
+    z-index: -10;
 }
 
 .topleft-gradient-faq{
     transform: translate(68%, 36%);
-
 }
 
 .bottomright-gradient-faq{
     transform: translate(0, -40%);
+}
 
+#info-banner {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: var(--grey);
+    padding: 42px;
+    margin-bottom: 100px;
+}
+
+#info-banner h3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: var(--primary-font-family);
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.info-points-container{
+    display: flex;
+    width: 100%;
+    margin-top: 24px;
+    justify-content: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.point-container{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 
-  /* .reviews-container .slick-prev,
-  .reviews-container .slick-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-  }
-  
-  .reviews-container .slick-prev {
-    left: 10px;
-  }
-  
-  .reviews-container .slick-next {
-    right: 10px;
-  } */
+.point-img-container{
+    background-color: #E4E4E4;
+    border-radius: 50%;
+    width: auto;
+    margin-bottom: 8px;
+}
+
+.point-container img {
+    display: flex;
+    object-fit: cover;
+    align-items: center;
+}
+
+.point-container h4{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: var(--primary-font-family);
+}
+
+.point-container p{
+    font-size: 12px;
+    font-family: var(--primary-font-family);
+    color: var(--quantary-color);
+    letter-spacing: 1px;
+    line-height: 14px;
+}
+
+.point1 {
+    padding: 12px 9px;
+}
+
+.point2 {
+    padding: 7px 13px;
+}
+
+.point3 {
+    padding: 8px 15px;
+}

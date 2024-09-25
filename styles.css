@@ -4,11 +4,18 @@
     --tertiary-color: white;
     --quantary-color: #676869;
     --grey: #F0EEEF;
-    --font-size: 9px;
-    --h1-font-size: 34px;
-    --h2-font-size: 30px;
-    --h3-font-size: 25px;
-    --h4-font-size: 14px;
+    --10px: 0.625rem;
+    --11px:0.688rem;
+    --12px: 0.75rem;
+    --13px: 0.813rem;
+    --14px: 0.875rem;
+    --18px: 1.125rem;
+    --20px: 1.25rem;
+    --25px: 1.563rem;
+    --28px: 1.75rem;
+    --30px: 1.875rem;
+    --34px: 2.125rem;
+
     --primary-font-family: "Poppins", sans-serif;
     --secondary-font-family: "Inter", sans-serif;
 }
@@ -23,7 +30,7 @@
 
 p {
     color: var(--quantary-color);
-    line-height: var(--h2-font-size);
+    line-height: var(--30px);
     font-family: var(--secondary-font-family);
     letter-spacing: .5px;
 }
@@ -35,14 +42,14 @@ h1,h2,h3,h4 {
 }
 
 h1 {
-    font-size: var(--h1-font-size);
+    font-size: var(--34px);
     font-weight: 400;
     letter-spacing: 2px; 
     line-height: 48px;
 }
  
 h2 {
-    font-size: var(--h2-font-size);
+    font-size: var(--34px);
 }
 
   /* Delivery Info */
@@ -50,13 +57,15 @@ h2 {
     display: flex;
     min-width: 100%;
     background-color: var(--secondary-color);
-    font-size: 11px;
+    font-size: var(--10px);
+    font-family: var(--primary-font-family);
     justify-content: center;
   }
 
 .delivery-txt{
-    line-height: 36px;
+    display: flex;
     letter-spacing: .8px;
+    padding: 4px 4px;
 }
 
 /* Hero section container */
@@ -74,10 +83,11 @@ h2 {
     flex: 0 0 45%;  
     padding: 20px 20px 0 100px;  
     box-sizing: border-box;
-    font-size: var(--h4-font-size);
+    font-size: var(--14px);
 }
 
 .byteex-container {
+    display: flex;
     width: 100%;
 }
 
@@ -140,7 +150,7 @@ h2 {
     background-color: var(--primary-color);
     color: var(--tertiary-color);
     padding: 17px 56px;
-    font-size: 18px;
+    font-size: var(--18px);
     font-family: var(--secondary-font-family);
     border-radius: 7px;
     letter-spacing: 1px;
@@ -166,7 +176,7 @@ h2 {
     border: 1px solid rgba(0, 0, 0, 0.1); 
     box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
     width: 71%;
-    font-size: 12px;
+    font-size: var(--12px);
     font-family: var(--secondary-font-family);
     padding: 14px 18px;
 }
@@ -197,7 +207,7 @@ h2 {
      
 #userName {
     width: 15%;
-    font-size: 13px;
+    font-size: var(--13px);
 }
 
 .star-rating ul{
@@ -206,23 +216,24 @@ h2 {
 
 .star-rating p {
     width: 50%;
-    font-size: 10px;
+    font-size: var(--10px);
 }
 
 .review-text{
     line-height: 2;
     letter-spacing: .5px;
-    font-size: 11px;
+    font-size: var(--11px);
     padding: 5px;
     margin-top: 10px;
 }
 
 /* Right side content */
 #rightside{
-    flex: 0 0 50%; 
-    box-sizing: border-box;
-    align-content: center;
     display: flex;
+   width: 50%;
+    box-sizing: border-box;
+    justify-content: center;
+   
 
 }
 
@@ -279,7 +290,7 @@ h2 {
     flex-wrap: wrap;
     flex: 0 0 100%;  
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: var(--20px);
     font-family: var(--primary-font-family);
     align-content: center;
     background: linear-gradient(var(--secondary-color) 10%, var(--tertiary-color));
@@ -293,7 +304,7 @@ h2 {
     flex: 0 0 100%; 
     justify-content: center;
     display: flex;
-    font-size: 17px;
+    font-size: 1.063rem;
 }
 
 .logos-container {
@@ -350,7 +361,7 @@ h2 {
     width: 100%;  
     box-sizing: border-box;
     font-weight: 400;
-    font-size: 28px;
+    font-size: var(--28px);
     letter-spacing: 1px;
     padding-left: 5px;
 }
@@ -371,7 +382,7 @@ h2 {
 .text_container p{
     font-weight: 400;
     font-family: var(--primary-font-family);
-    font-size: 13px;
+    font-size: var(--13px);
     line-height: 1.9;
 }
 
@@ -459,7 +470,7 @@ justify-content: center
   
   .slider-description {
     display: flex;
-    font-size: 13px;
+    font-size: var(--13px);
     color: var(--quantary-color);
     font-family: var(--secondary-font-family);
     justify-content: center;
@@ -470,7 +481,7 @@ justify-content: center
   .prev-arrow, .next-arrow {
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     cursor: pointer;
     height: 100%;
     display: flex;
@@ -552,11 +563,11 @@ justify-content: center
     flex-direction: column;
     align-content: flex-start;
     margin-top: 7.5%;
-    font-size: var(--h4-font-size);
+    font-size: var(--14px);
 }
 
 #right-container-h2 {
-    font-size: 28px;
+    font-size: var(--28px);
 }
 
 .about-text{
@@ -589,7 +600,7 @@ justify-content: center
     width: 100%;
     text-align: center;
     margin-bottom: 36px;
-    font-size: var(--h2-font-size);
+    font-size: var(--34px);
     margin-top: 76px;  
     display: flex;
     justify-content: center;
@@ -641,7 +652,7 @@ justify-content: center
 } 
 
 p.item {
-    font-size: var(--h4-font-size);
+    font-size: var(--14px);
 }
 
 .item-container img.item {
@@ -686,9 +697,8 @@ justify-content: center;
     display: flex;
     justify-content: flex-start;
     height: fit-content;
-
     width: 30%;
-    font-size: 12px;
+    font-size: var(--11px);
 }
 #product-icon, #user-product-icon{
     padding: 0;
@@ -723,14 +733,14 @@ justify-content: center;
   
 .content-header {
     justify-content: center;
-    font-size: 28px;
+    font-size: var(--28px);
     letter-spacing: 2px; 
     margin-bottom: 20px;
 }
 
 .content-text {
     width: 38%;
-    font-size: 13px;
+    font-size: var(--13px);
     text-align: center;
     line-height: 2;
 }
@@ -806,7 +816,7 @@ justify-content: center;
     display: flex;
     justify-content: flex-start;
     font-family: var(--primary-font-family);
-    font-size: 12px;
+    font-size: var(--12px);
 }
 
 .user-rating{
@@ -820,7 +830,7 @@ justify-content: center;
 }
 .review-texts{
    font-family: var(--secondary-font-family);
-   font-size: 12px;
+   font-size: var(--12px);
    color: var(--quantary-color);
    line-height: 24px;
    margin-top: 16px;
@@ -885,7 +895,7 @@ width: 41%;
     justify-content: space-between;
     align-items: center;
     outline: none;
-    font-size: 18px;
+    font-size: var(--18px);
     line-height: 18px;
     transition: 0.4s;
     background-color: var(--tertiary-color);
@@ -900,21 +910,25 @@ width: 41%;
     font-family: var(--primary-font-family);
     font-weight: 300;
     color: var(--primary-color);
-    font-size: 35px;
+    font-size: 2.188rem;
     line-height: 35px;
     font-weight: 200;
-
 }
-  
+.accordion-header.active {
+    border-bottom: none; 
+}
+
+
   .active:after {
     content: "\2212";
+   
 }
   
   .accordion-content {
     max-height: 0;
     margin-top: -24px;
     margin-bottom: 16px;
-    font-size: 14px;
+    font-size: var(--14px);
     font-family: var(--primary-font-family);
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -1010,7 +1024,7 @@ width: 41%;
     width: 100%;
     justify-content: center;
     font-family: var(--primary-font-family);
-    font-size: 22px;
+    font-size: 1.375rem;
     letter-spacing: 1px;
 }
 
@@ -1046,12 +1060,12 @@ width: 41%;
 
 .point-container h4{
     font-weight: bold;
-    font-size: 20px;
+    font-size: var(--20px);
     font-family: var(--primary-font-family);
 }
 
 .point-container p{
-    font-size: 12px;
+    font-size: var(--12px);
     font-family: var(--primary-font-family);
     color: var(--quantary-color);
     letter-spacing: 1px;
@@ -1086,7 +1100,7 @@ width: 41%;
 }
 
 .cta_p{
-    font-size: 13px;
+    font-size: var(--13px);
     margin: 0 30% 36px;
     letter-spacing: 1px;
     text-align: center;
@@ -1162,7 +1176,7 @@ width: 41%;
     display: flex;
 width: auto;
 margin: 5px;
-font-size: 10px;
+font-size: var(--10px);
 font-family: var(--primary-font-family);
 color: #1FAD40;
 line-height: 18px;
@@ -1221,6 +1235,62 @@ padding-right: 8px;
 }
 
 .fourteen {
-    font-size: 12px;
+    font-size: var(--12px);
     line-height: 24px;
 }
+
+/* Responsive design */
+
+/* Large screen */
+@media only screen and (min-width: 801px) {
+
+    #unhide_when_mob {
+        display: none;
+    }
+}
+
+
+/* Small screen */
+@media only screen and (max-width: 800px) {
+    .slick-next:before{
+        color: #1FAD40;
+    }
+    .delivery {
+    font-size: var(--18px);
+
+    }
+    
+    .delivery-txt {
+    margin: 8px;
+
+    }
+
+    .delivery-txt-mob {
+        display: none;
+    }
+
+    .byteex-container{
+        justify-content: center;
+    }
+
+    #rightside {
+        display: none;
+
+    }
+
+    #leftside {
+        flex: 0 0 100%;  
+        padding: 48px 48px 0 48px;
+    }
+
+    #hero-quote{
+        text-align: center;
+    }
+
+
+    #left-container-about,
+    #right-container-about {
+      flex: 100%;
+    }
+}
+

@@ -63,148 +63,45 @@ window.addEventListener('resize', function() {
     }
   });
 
-//
-//   const reviewContainers = document.querySelectorAll('.review-container');
-// const prevBtn = document.querySelector('.prev-arrow');
-// const nextBtn = document.querySelector('.next-arrow');
+//   Slick slider mobile 
 
-// let currentIndex = 0;
+$(document).ready(function(){
+    var $productBlock = $('.product-block');
+    var slickInitialized = false;
 
-// function showReview(index) {
-//   reviewContainers.forEach((container, i) => {
-//     if (i === index) {
-//       container.style.display = 'block';
-//     } else {
-//       container.style.display = 'none';
-//     }
-//   });
-// }
-
-// prevBtn.addEventListener('click', () => {
-//   currentIndex = (currentIndex - 1 + reviewContainers.length) % reviewContainers.length;
-//   showReview(currentIndex);
-// });
-
-// nextBtn.addEventListener('click', () => {
-//   currentIndex = (currentIndex + 1) % reviewContainers.length;
-//   showReview(currentIndex);
-// });
-
-// showReview(currentIndex);
-
-
-// Initialize a headless CMS client
-const contentfulClient = createClient({
-    space: 'sd1ygy5u8poo',
-    accessToken: 'EYvgLcf-hnssXLa0tsoazazyOBvjwi1e6B4ER9PbGLY'
-  });
-  
-//   // Fetch content entries from the CMS
-//   async function getComments() {
-//     try {
-//       const response = await contentfulClient.getEntries({
-//         content_type: 'comment'
-//       });
-//       return response.items;
-//     } catch (error) {
-//       console.error('Error fetching comments:', error);
-//       return [];
-//     }
-//   }
-  
-//   // Render the comments section on the page
-//   async function renderCommentsSection() {
-//     const commentsContainer = document.getElementById('comments-section');
-//     const comments = await getComments();
-  
-//     comments.forEach(comment => {
-//       const commentElement = document.createElement('div');
-//       commentElement.classList.add('comment');
-  
-//       const authorElement = document.createElement('h4');
-//       authorElement.textContent = comment.fields.author;
-  
-//       const contentElement = document.createElement('p');
-//       contentElement.textContent = comment.fields.content;
-  
-//       commentElement.appendChild(authorElement);
-//       commentElement.appendChild(contentElement);
-//       commentsContainer.appendChild(commentElement);
-//     });
-//   }
-  
-//   // Call the renderCommentsSection function to display the comments
-//   renderCommentsSection();
-
-// Fetch reviews from the headless CMS
-async function getReviews() {
-    try {
-      const response = await contentfulClient.getEntries({
-        content_type: 'review'
-      });
-      return response.items;
-    } catch (error) {
-      console.error('Error fetching reviews:', error);
-      return [];
+    function initSlick() {
+        if ($(window).width() < 801 && !slickInitialized) {
+            $productBlock.slick({
+                infinite: true,
+                lazyLoad: 'ondemand',
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                arrows: true
+            });
+            slickInitialized = true;
+        } else if ($(window).width() >= 801 && slickInitialized) {
+            $productBlock.slick('unslick');
+            slickInitialized = false;
+        }
     }
-  }
-  
-  // Render the reviews section on the page
-  async function renderReviewsSection() {
-    const reviewsContainer = document.querySelector('.reviews-container');
-    const reviews = await getReviews();
-  
-    reviews.forEach(review => {
-      const reviewElement = document.createElement('div');
-      reviewElement.classList.add('review-container');
-  
-      const topPartElement = document.createElement('div');
-      topPartElement.classList.add('top-part');
-  
-      const reviewLogoElement = document.createElement('div');
-      reviewLogoElement.classList.add('review-logo');
-      const reviewLogoImage = document.createElement('img');
-      reviewLogoImage.src = review.fields.logo.fields.file.url;
-      reviewLogoElement.appendChild(reviewLogoImage);
-  
-      const reviewUserContainerElement = document.createElement('div');
-      reviewUserContainerElement.classList.add('review-user-container');
-  
-      const reviewStarsElement = document.createElement('div');
-      reviewStarsElement.classList.add('review-stars');
-      const starRatingElement = document.createElement('ul');
-      starRatingElement.classList.add('star-rating');
-      for (let i = 0; i < review.fields.rating; i++) {
-        const starElement = document.createElement('li');
-        const starImage = document.createElement('img');
-        starImage.src = './image/star.svg';
-        starImage.alt = `${review.fields.rating} out of 5 stars`;
-        starImage.classList.add('user-star');
-        starElement.appendChild(starImage);
-        starRatingElement.appendChild(starElement);
-      }
-      reviewStarsElement.appendChild(starRatingElement);
-  
-      const reviewUserElement = document.createElement('div');
-      reviewUserElement.classList.add('review-user');
-      reviewUserElement.textContent = review.fields.author;
-  
-      reviewUserContainerElement.appendChild(reviewStarsElement);
-      reviewUserContainerElement.appendChild(reviewUserElement);
-  
-      const reviewTextsElement = document.createElement('div');
-      reviewTextsElement.classList.add('review-texts');
-      reviewTextsElement.textContent = review.fields.content;
-  
-      topPartElement.appendChild(reviewLogoElement);
-      topPartElement.appendChild(reviewUserContainerElement);
-  
-      reviewElement.appendChild(topPartElement);
-      reviewElement.appendChild(reviewTextsElement);
-  
-      reviewsContainer.appendChild(reviewElement);
+
+    // Initialize on document ready
+    initSlick();
+
+    // Re-initialize on window resize
+    $(window).resize(function() {
+        initSlick();
     });
-  }
-  
-  // Call the renderReviewsSection function to display the reviews
-  renderReviewsSection();
+});
+
+// $(document).ready(function(){
+//     $('.product-block').slick({
+//         dots: true,
+//         infinite: true,
+//         speed: 300,
+//         slidesToShow: 1,
+//         adaptiveHeight: true,
+// arrows: true
+//     });
+// });

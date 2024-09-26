@@ -1,4 +1,4 @@
-// Slick slider 
+// Slick slider with thumbnail
 $(document).ready(function() {
     $('.main-slider').slick({
         slidesToShow: 8,
@@ -48,21 +48,6 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// Slick slider
-window.addEventListener('resize', function() {
-    if (window.innerWidth < 800) {
-      $('.product-block').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true
-      });
-    } else {
-      if ($('.product-block').hasClass('slick-initialized')) {
-        $('.product-block').slick('unslick');
-      }
-    }
-  });
-
 //   Slick slider mobile 
 
 $(document).ready(function(){
@@ -95,13 +80,3 @@ $(document).ready(function(){
     });
 });
 
-// $(document).ready(function(){
-//     $('.product-block').slick({
-//         dots: true,
-//         infinite: true,
-//         speed: 300,
-//         slidesToShow: 1,
-//         adaptiveHeight: true,
-// arrows: true
-//     });
-// });
